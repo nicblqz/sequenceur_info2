@@ -1,3 +1,4 @@
+#pip install rpi-lcd (si il est pas déjà installé)
 from rpi_lcd import LCD
 import time
 
