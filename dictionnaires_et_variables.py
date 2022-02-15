@@ -1,9 +1,11 @@
 # dicos pour l'instant mais à changer en classes ?
 
-PARAM1 = {"note":0, "gate":0, "cv1":0, "cv2":0, "cv3":0, "cv4":0}
-PARAM2 = {"note":0, "gate":0, "cv1":0, "cv2":0, "cv3":0, "cv4":0}
-# ...
-SEQ = {"pas1":PARAM1, "pas2":PARAM2}
+SEQ = {}
+for i in range(1,65):
+    PARAM = {"note":0, "gate":0, "cv1":0, "cv2":0, "cv3":0, "cv4":0}
+    SEQ["pas"+str(i)] = PARAM
+
+# SEQ['pas1']['note'] = 1 pour modifier (exemple)
 
 GEN = {"long":0, "bpm":0, "gamme":0}
 
